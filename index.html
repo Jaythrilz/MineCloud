@@ -1264,8 +1264,8 @@ footer{border-top:1px solid var(--border);padding:60px 80px 40px;background:var(
    ③ Copy "Project URL" and "anon/public" key
    ④ Paste them below replacing the placeholders
    ════════════════════════════════════════════════ */
-const SUPABASE_URL = 'https://cdjrmwoyakjoekvkcwjd.supabase.co'
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNkanJtd295YWtqb2Vrdmtjd2pkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ5OTYxODUsImV4cCI6MjA5MDU3MjE4NX0.32EV-ppCjIeGXL6kQB5GnvlNnnKe5u22NWWathm62gs'
+const SUPABASE_URL = 'YOUR_PROJECT_ID'
+const SUPABASE_KEY = 'YOUR_ANON_PUBLIC_KEY'
 
 /* ════════════════════════════════════════════════
    SMART CONNECTION — Works in DEMO mode when
@@ -1274,8 +1274,8 @@ const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
    This eliminates the "Failed to fetch" error.
    ════════════════════════════════════════════════ */
 const DEMO_MODE = (
-  SUPABASE_URL.includes('https://cdjrmwoyakjoekvkcwjd.supabase.co') ||
-  SUPABASE_KEY.includes('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNkanJtd295YWtqb2Vrdmtjd2pkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ5OTYxODUsImV4cCI6MjA5MDU3MjE4NX0.32EV-ppCjIeGXL6kQB5GnvlNnnKe5u22NWWathm62gs') ||
+  SUPABASE_URL.includes('YOUR_PROJECT_ID') ||
+  SUPABASE_KEY.includes('YOUR_ANON_PUBLIC_KEY') ||
   !SUPABASE_URL.startsWith('https://')
 )
 
